@@ -1,0 +1,10 @@
+libdir=/czlab/ricardo/dir_linker/dir_indel_genotyping/packages/bamtools/lib
+includedir=/czlab/ricardo/dir_linker/dir_indel_genotyping/packages/bamtools/include
+
+Name: BamTools
+Description: BamTools is a C++ library for reading and manipulating BAM files
+Version: 2.5.1
+
+Requires.private: zlib
+Libs: -L${libdir} -lbamtools
+Cflags: -I${includedir}
