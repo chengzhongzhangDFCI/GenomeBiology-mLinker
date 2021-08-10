@@ -18,5 +18,5 @@ refgendir='/czlab/References/GRCh38/hg38_chroms_fa/'
 for chr in ${chromosomes[@]}
 do
 	nohupname='nohup_extract_'${suffix}'_'${chr}'.out'
-	nohup time ./mlinker extract_incl_indels -v ${vcf} -i ${bam} -c ${chr} -e ${technology} -d ${refgendir} -l 100 -k ${kmersize} -n ${suffix}  &> ${nohupname} &
+	nohup time ./mlinker extract -v ${vcf} -i ${bam} -c ${chr} -e ${technology} -d ${refgendir} -l 100 -k ${kmersize} -n ${suffix}  &> ${nohupname} &
 done
